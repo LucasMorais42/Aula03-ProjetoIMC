@@ -1,0 +1,31 @@
+<form>
+    <div class="p-3 mb-2 w-50 border border-black bg-info-subtle container">
+        <div class="m-2  form-group">
+            <label for="exampleFormControlInput1">Altura</label>
+            <input type="number" class="w-10 form-control" id="exampleFormControlInput1" placeholder="Informe sua altura" [(ngModel)]="altura" name="altura">
+        </div>
+
+        <div class="m-2  form-group">
+            <label for="peso">Peso</label>
+            <input type="number" class="form-control" id="peso" placeholder="Informe seu peso" [(ngModel)]="peso" name="peso">
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="CalcularIMC()">Calcular</button>
+
+        <div class="m-2 form-group">
+            <label for="Valor IMC">Valor IMC {{IMC.toFixed(2)}} kg/m²</label>
+        </div>
+        
+        <div class="m-2 form-group">
+            <label for="Classificacao_IMC">Classificação IMC: {{classificacao_IMC}}</label>
+        </div>
+
+        <div class="m-2 form-group">
+            <img [src]="imagem">
+        </div>
+    </div>
+  
+
+    
+
+  </form>
