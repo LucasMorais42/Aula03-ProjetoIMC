@@ -20,6 +20,8 @@ export class FormularioComponent {
     if ((this.peso==0.0) || (this.altura==0.0)){
       alert("Digite algum valor maior que 0.");
       this.imagem='';
+      this.classificacao_IMC='Erro no calculo!';
+      this.IMC=NaN;
     }
 
     else{
